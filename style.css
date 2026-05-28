@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    #FFF6F2 0%,
+    #EF5B6E 20%,
+    #FFB7C5 38%,
+    #7F7FFF 62%,
+    #FFD7C8 82%,
+    #FFF3E8 100%
+  );
+  overflow: hidden;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+  position: relative;
+  z-index: 10;
+  color: #FFFFFF;
+  font-size: 3rem;
+  text-shadow: 0 0 20px rgba(45, 215, 165, 0.55);
+}
+
+.lava-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.blob {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(
+    circle at 30% 30%,
+    #D4E9E2 0%,
+    #2DD7A5 58%,
+    #6EF2D0 100%
+  );
+  border-radius: 50%;
+  mix-blend-mode: screen;
+  opacity: 0.82;
+  animation: float 10s ease-in-out infinite alternate;
+  transition: all 0.5s ease;
+}
+
+.blob:nth-child(2) {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(
+    circle at 70% 70%,
+    #2DD7A5 0%,
+    #7AFFF0 62%,
+    #D4E9E2 100%
+  );
+  animation-duration: 12s;
+  animation-delay: 2s;
+}
+
+.blob:nth-child(3) {
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(
+    circle at 50% 20%,
+    #CFFFF1 0%,
+    #2DD7A5 55%,
+    #B8FFF3 100%
+  );
+  animation-duration: 14s;
+  animation-delay: 4s;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(10vw, 20vh) scale(1);
+    border-radius: 45% 55% 50% 50% / 55% 45% 55% 45%;
+  }
+
+  25% {
+    transform: translate(40vw, 10vh) scale(1.2);
+    border-radius: 55% 45% 50% 50% / 45% 55% 45% 55%;
+  }
+
+  50% {
+    transform: translate(60vw, 50vh) scale(0.9);
+    border-radius: 50% 50% 55% 45% / 50% 50% 45% 55%;
+  }
+
+  75% {
+    transform: translate(30vw, 70vh) scale(1.3);
+    border-radius: 48% 52% 60% 40% / 55% 45% 40% 60%;
+  }
+
+  100% {
+    transform: translate(10vw, 30vh) scale(1);
+    border-radius: 50%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    #FFF6F2 0%,
+    #EF5B6E 20%,
+    #FFB7C5 38%,
+    #7F7FFF 62%,
+    #FFD7C8 82%,
+    #FFF3E8 100%
+  );
+  overflow: hidden;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+  position: relative;
+  z-index: 10;
+  color: #FFFFFF;
+  font-size: 3rem;
+  text-shadow: 0 0 20px rgba(45, 215, 165, 0.55);
+}
+
+.lava-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* TEAL / MINT BLOB */
+.blob {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(
+    circle at 30% 30%,
+    #D4E9E2 0%,
+    #2DD7A5 58%,
+    #6EF2D0 100%
+  );
+  border-radius: 50%;
+  mix-blend-mode: screen;
+  opacity: 0.82;
+  animation: float 10s ease-in-out infinite alternate;
+  transition: all 0.5s ease;
+}
+
+/* ORCHID PINK BLOB */
+.blob:nth-child(2) {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(
+    circle at 70% 70%,
+    #FFD9F4 0%,
+    #E090C7 58%,
+    #C86BAF 100%
+  );
+  animation-duration: 12s;
+  animation-delay: 2s;
+}
+
+/* TERRACOTTA / CORAL BLOB */
+.blob:nth-child(3) {
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(
+    circle at 50% 20%,
+    #FFD8C7 0%,
+    #DC764A 55%,
+    #FF9A6E 100%
+  );
+  animation-duration: 14s;
+  animation-delay: 4s;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(10vw, 20vh) scale(1);
+    border-radius: 45% 55% 50% 50% / 55% 45% 55% 45%;
+  }
+
+  25% {
+    transform: translate(40vw, 10vh) scale(1.2);
+    border-radius: 55% 45% 50% 50% / 45% 55% 45% 55%;
+  }
+
+  50% {
+    transform: translate(60vw, 50vh) scale(0.9);
+    border-radius: 50% 50% 55% 45% / 50% 50% 45% 55%;
+  }
+
+  75% {
+    transform: translate(30vw, 70vh) scale(1.3);
+    border-radius: 48% 52% 60% 40% / 55% 45% 40% 60%;
+  }
+
+  100% {
+    transform: translate(10vw, 30vh) scale(1);
+    border-radius: 50%;
+  }
+}
