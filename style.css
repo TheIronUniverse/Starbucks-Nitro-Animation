@@ -1,4 +1,21 @@
 * {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Prevents scrollbars from breaking the fullscreen look */
+}
+
+/* Ensure your main animation container fills the screen */
+.your-animation-container {
+  width: 100%;
+  height: 100%;
+}
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
